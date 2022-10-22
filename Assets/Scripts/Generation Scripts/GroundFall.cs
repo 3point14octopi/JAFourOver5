@@ -43,9 +43,9 @@ public class GroundFall : MonoBehaviour
 
         if (level != 15)
         {
-            for (int i = level; i < (30 - (level + 1)); i++)
+            for (int i = level; i < (30 - (level)); i++)
             {
-                a.arena.tileRef[(level - 1), i].transform.position = new Vector3(a.arena.tileRef[(level - 1), i].transform.position.x, a.arena.tileRef[(level - 1), i].transform.position.y - 1, a.arena.tileRef[(level - 1), i].transform.position.z);
+                a.arena.tileRef[(level -1), i].transform.position = new Vector3(a.arena.tileRef[(level - 1), i].transform.position.x, a.arena.tileRef[(level - 1), i].transform.position.y - 1, a.arena.tileRef[(level - 1), i].transform.position.z);
                 a.arena.tileRef[(30 - (level)), i].transform.position = new Vector3(a.arena.tileRef[(30 - (level)), i].transform.position.x, a.arena.tileRef[(30 - (level)), i].transform.position.y - 1, a.arena.tileRef[(30 - (level)), i].transform.position.z);
             }
         }
